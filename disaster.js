@@ -9,8 +9,6 @@ if(menuBtn) {
 }
 
 
-
-
 // TARGET LOCAL ROUTING FUNCTION FOR CARD INSIDE CONTAINER BLOCKS
 function displayLocalMessage(text, buttonElement) {
   // 1. Automatically close any open text boxes on other cards first
@@ -73,7 +71,7 @@ function showPreparedness(type, element) {
       "• Keep emergency cash on hand, as ATMs may lose power";
   }
   else if (type === "Tsunami") {
-    msg = "🌊 Tsunami Preparedness Guide:\n\n" +
+ msg = "🌊 Tsunami Preparedness Guide:\n\n" +
       "• Learn to recognize tsunami warning signs: ground shaking, rapid ocean recession\n" +
       "• Map out emergency routes to elevated spaces at least 100 feet above sea level\n" +
       "• Keep your emergency go-bag accessible near the main exit door\n" +
@@ -82,7 +80,7 @@ function showPreparedness(type, element) {
   }
   else if (type === "Volcanic Eruption") {
     msg = "🌋 Volcanic Eruption Preparedness Guide:\n\n" +
- "• Stock up on dynamic protective goggles and heavy-duty dust masks (N95)\n" +
+      "• Stock up on dynamic protective goggles and heavy-duty dust masks (N95)\n" +
       "• Clear vulnerable roofs of ash accumulation to avoid sudden structure collapse\n" +
       "• Map shelter pathways outside immediate structural exclusion danger zones\n" +
       "• Store multi-day plastic wraps to protect vulnerable house appliances from ash\n" +
@@ -134,7 +132,7 @@ function showPreparedness(type, element) {
   else if (type === "Oil Spill") {
     msg = "🛢 Oil Spill Preparedness Guide:\n\n" +
       "• Keep local wildlife rescue numbers and environmental agency contacts handy\n" +
-      "• Stock protective gear (rubber gloves, boots, masks) if you live in coastal zones\n" +
+ "• Stock protective gear (rubber gloves, boots, masks) if you live in coastal zones\n" +
       "• Pre-map alternative water sources if your community relies on local surface water\n" +
       "• Set up alert tracking with local harbor or maritime safety authorities\n" +
       "• Stay informed on coastal exclusion boundaries designated for public safety";
@@ -143,7 +141,7 @@ function showPreparedness(type, element) {
     msg = "💻 Cyberattack Preparedness Guide:\n\n" +
       "• Regularly back up critical digital files to secure, offline hard drives\n" +
       "• Use complex passwords paired with mandatory Multi-Factor Authentication (MFA)\n" +
- "• Install reliable security software and keep operating systems fully updated\n" +
+      "• Install reliable security software and keep operating systems fully updated\n" +
       "• Keep copies of vital financial documentation and emergency cash access paths\n" +
       "• Learn to identify phishing emails, unverified links, and malicious attachments";
   }
@@ -197,7 +195,7 @@ function showTips(type, element) {
     msg = "⚠️ Wildfire Safety Tips:\n\n" +
       "• Evacuate instantly when ordered; do not wait until structural fire is visible\n" +
       "• Keep your windows and doors fully locked up to limit smoke damage before leaving\n" +
-      "• Turn on interior/exterior house lights so your home is visible to rescue crews in thick smoke\n" +
+ "• Turn on interior/exterior house lights so your home is visible to rescue crews in thick smoke\n" +
       "• Drive slowly with headlights turned on high to navigate smoky air safely\n" +
       "• Avoid low visibility areas and dynamically check wind shifts while fleeing";
   }
@@ -206,7 +204,7 @@ function showTips(type, element) {
       "• Stay low to the ground beneath the smoke layer while crawling toward an exit\n" +
       "• Use stairs only—never take an elevator during a structure fire\n" +
       "• Call emergency services as soon as you reach a completely safe location\n" +
-"• Feel doors with the back of your hand before opening; if hot, find an alternate route\n" +
+      "• Feel doors with the back of your hand before opening; if hot, find an alternate route\n" +
       "• Once you are out of the building, stay out. Never go back inside for any reason";
   }
   else if (type === "Pollution") {

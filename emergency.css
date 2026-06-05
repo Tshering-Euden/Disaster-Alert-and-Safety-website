@@ -202,6 +202,7 @@ body{
     font-family:Arial, sans-serif;
 } */
 
+
 .service-container{
     width:90%;
     max-width:1000px;
@@ -215,6 +216,10 @@ body{
 .service-container {
     margin: 50px auto;
     padding: 20px;
+}
+/* Optional smooth effect */
+[data-aos] {
+    transition-duration: 1.2s;
 }
 
 /* Optional smooth effect */
@@ -310,35 +315,35 @@ body{
     height:100%;
     object-fit:cover;
 }
-
-@media(max-width:768px){
+@media (max-width: 768px) {
 
     .row-top,
     .row-bottom,
-    .row-middle{
-        grid-template-columns:1fr;
+    .row-middle {
+        grid-template-columns: 1fr;
     }
 
-    .flex-block{
-        flex-direction:column;
+    .flex-block {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items:center;
-        text-align:center;
-        /* text-align: justify; */
+        align-items: center;
+        text-align: center;
     }
-    .flex-block p{
-        text-align:justify left;
+
+    .flex-block p {
+        /* Fixed: Changed from 'justify left' to just 'justify' */
+        text-align: justify; 
     }
-    .box img{
+
+    .box img {
         width: 200px;
         height: 200px;
-        margin-left: 20px;
+        /* Tip: If you are centering the container, a left margin  */
+        /* might push your image off-center. Consider margin: 0; */
+        margin-left: 0; 
     }
-
-   
 }
-
 
 
 

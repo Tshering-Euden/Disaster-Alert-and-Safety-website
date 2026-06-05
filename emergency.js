@@ -32,8 +32,7 @@ document.addEventListener("click", function(e){
 AOS.init({
     duration: 1200,   // Animation speed
     once: true,       // Animate only once
-    offset: 100,      // Trigger 100px before element enters view
-    easing: 'ease-in-out'
+   
 });
 
 
