@@ -1,0 +1,474 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+padding-top:80px;
+}
+
+html {
+ scrollbar-width: none;  
+}
+
+.navbar{
+background:#0d1d49;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 20px;
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+
+z-index:1000;
+}
+
+/* Logo */
+.logo{
+    color: white;
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    margin-right: 25%;
+    margin-left: 20px;
+}
+.logo img{
+width:60px;
+height:60px;
+object-fit:contain;
+border-radius: 50%;
+}
+
+/* Navigation */
+
+.nav-links{
+list-style:none;
+display:flex;
+align-items:center;
+}
+
+.nav-links li{
+position:relative;
+}
+
+.nav-links li a{
+display:block;
+padding:15px 19px;
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+.nav-links li a:hover{
+background:#1d2f66;
+border-radius:5px;
+}
+
+/* Dropdown */
+
+.dropdown-content{
+display:none;
+position:absolute;
+background:white;
+min-width:180px;
+top:100%;
+left:0;
+box-shadow:0 3px 8px rgba(0,0,0,0.2);
+border-radius:5px;
+overflow:hidden;
+}
+
+.dropdown-content li{
+width:100%;
+}
+
+.dropdown-content a{
+color:black !important;
+padding:12px;
+}
+
+.dropdown-content a:hover{
+background:#ddd;
+}
+
+.dropdown:hover .dropdown-content{
+display:block;
+}
+
+/* Search Box */
+
+.search-box{
+display:flex;
+margin-left:auto;
+margin-right:30px;
+}
+
+.search-box input{
+padding: 8px;
+border:none;
+border-radius:5px 0 0 5px;
+outline:none;
+}
+
+.search-box button{
+padding:8px 12px;
+border:none;
+background:#ff9800;
+color:white;
+cursor:pointer;
+border-radius:0 5px 5px 0;
+}
+
+.search-box button:hover{
+background:#e68900;
+}
+
+/* Menu Icon */
+
+.menu-icon{
+display:none;
+color:white;
+font-size:24px;
+cursor:pointer;
+}
+/* Responsive */
+
+@media(max-width:900px){
+
+.nav-links{
+display:none;
+}
+
+.search-box{
+display:none;
+}
+.logo{
+  margin-left: -12px;
+}
+
+.menu-icon{
+display:block;
+}
+
+.nav-links.active{
+display:flex;
+flex-direction:column;
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+background:#0d1d49;
+padding:10px 0;
+z-index:10;
+}
+
+.nav-links.active li{
+width:100%;
+text-align:center;
+}
+
+.nav-links.active .dropdown-content{
+position:static;
+box-shadow:none;
+border-radius:0;
+}
+
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    padding-top: 20px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Core Main Structural Layout Elements */
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    color: #b71c1c;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: grid;
+    /* Changed to align-items: start to keep cards in the same row from stretching weirdly when one expands */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    align-items: start; 
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-content h3 {
+    color: #c62828;
+    margin-bottom: 10px;
+}
+
+/* Interaction Button Elements inside Cards */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.button-group button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.button-group button:hover {
+    transform: scale(1.05);
+    background-color: orange;
+}
+
+.button-group button:first-child {
+    background: #1565c0;
+}
+
+.button-group button:first-child:hover {
+    background: #0d47a1;
+}
+
+.button-group button:last-child {
+    background: orange;
+}
+
+/* LOCALIZED CARD MESSAGE BOXES (Directly below buttons) */
+.card-message {
+    margin-top: 15px;
+    padding: 15px;
+    background: #fff8f8;
+    border-left: 5px solid orange;
+    border-radius: 8px;
+    position: relative;
+    line-height: 1.6;
+    font-size: 14px;
+    text-align: left;
+}
+
+.message-content {
+    padding-right: 20px;
+    white-space: pre-line;
+    color: #333;
+}
+
+.close-message {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-message:hover {
+    color: #b71c1c;
+}
+
+
+ /* FOOTER */
+
+.footer{
+background:#0d1d49;
+color:white;
+padding:40px 20px 10px;
+margin-top:50px;
+}
+
+.footer-container{
+
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:10px;
+
+}
+
+.footer-section {
+    margin-left: 50px;
+}
+
+.footer-section .quick{
+    margin-left: 70px;
+}
+
+.footer-section h3{
+
+margin-bottom:15px;
+color:#ff9800;
+}
+#follow{
+    margin-left: 75px;
+}
+.footer-section p{
+
+margin-bottom:8px;
+line-height:1.6;
+
+}
+
+.footer-section a{
+
+display:block;
+color:white;
+text-decoration:none;
+margin-bottom:8px;
+
+}
+
+.footer-section a:hover{
+
+color:#ff9800;
+
+}
+
+/* Social Media */
+
+.social-icons{
+
+display:flex;
+gap:12px;
+
+}
+
+.social-icons a{
+
+width:40px;
+height:40px;
+
+background:white;
+color:#0d1d49;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:50%;
+
+font-size:18px;
+
+transition:0.3s;
+
+}
+
+.social-icons a:hover{
+
+background:#ff9800;
+color:white;
+
+transform:translateY(-4px);
+
+}
+#contact{
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+.footer hr{
+
+margin:25px 0;
+border:0.5px solid rgba(255,255,255,0.3);
+
+}
+
+.footer-bottom{
+
+text-align:center;
+font-size:14px;
+
+padding-bottom:10px;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+   
+.footer-container{
+
+text-align:center;
+padding-right: 50px;
+
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+#follow{
+    margin-right: 70px;
+}
+
+#contact{
+    margin-right: 70px;
+}
+.footer-section .quick{
+    margin-left: 0;
+}
+
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<nav class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="./image/logo.jpg" alt="Logo">
+        Disaster Alert and Safety
+    </div>
+
+    <!-- Menu -->
+    <ul class="nav-links" id="navMenu">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+            <a href="about.html">About</a>
+            <ul class="dropdown-content">
+                <li><a href="mission.html">Mission</a></li>
+                <li><a href="vission.html">Vision</a></li>
+                <li><a href="staffprofile.html">Staff Profile</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="alert.html">Alert</a>
+        </li>
+
+        <li class="dropdown">
+            <a href="emergency.html">Emergency Contact</a>
+            <ul class="dropdown-content">
+                <li><a href="RBA.html">RBA</a></li>
+                <li><a href="RBP.html">RBP</a></li>
+                <li><a href="firefighter.html">Fire Fighter</a></li>
+                <li><a href="ambulance.html">Ambulance</a></li>
+                <li><a href="desuung.html">Desuung</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="disaster.html">Disaster</a>
+            <ul class="dropdown-content">
+                <li><a href="man-made.html">Man-made</a></li>
+                <li><a href="natural.html">Natural</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <!-- Search Bar -->
+    <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <a href="https://www.google.com/"><button>Search</button></a>
+    </div>
+
+    <!-- Menu Icon -->
+    <div class="menu-icon" id="menuBtn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <!-- Background Video -->
+
+    <video autoplay muted loop playsinline class="hero-video">
+
+        <source src="./image/Hero section homepage.mp4" type="video/mp4">
+
+    </video>
+
+    <!-- Overlay -->
+
+    <div class="overlay"></div>
+
+    <!-- Content -->
+
+    <div class="hero-content">
+
+        <h1>
+            Disaster Preparedness & Emergency Response
+        </h1>
+
+        <p>
+            Stay informed with real-time alerts,
+            emergency contacts, disaster awareness,
+            and preparedness information to keep
+            communities safe and resilient.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="alert.html" class="btn-primary">
+                Emergency Alerts
+            </a>
+
+            <a href="emergency.html" class="btn-secondary">
+                Learn More
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- INTRODUCTION -->
+
+  <section class="intro" data-aos="fade-up">
+
+    <h2>Introduction</h2>
+
+    <div class="intro-container">
+
+      <div class="intro-card" data-aos="fade-up">
+        <i class="fa-solid fa-bell"></i>
+        <h3>Emergency Alerts</h3>
+        <p>
+          Receive quick and updated information during floods,
+          earthquakes, wildfires, storms, and emergencies.
+        </p>
+      </div>
+
+      <div class="intro-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-earth-asia"></i>
+        <h3>Global Safety</h3>
+        <p>
+          Disaster awareness helps reduce risks and improves rescue
+          response during emergencies.
+        </p>
+      </div>
+
+      <div class="intro-card" data-aos="fade-up" data-aos-delay="400">
+        <i class="fa-solid fa-user-shield"></i>
+        <h3>Community Protection</h3>
+        <p>
+          Communities become safer when people understand disaster
+          preparedness and emergency actions.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+   <!-- MAIN PROBLEMS -->
+
+  <section class="problem-section"data-aos="fade-up" >
+
+    <h2>Main Problems Around the World</h2>
+
+    <div class="card-container"data-aos="fade-up" >
+
+      <div class="card"data-aos="fade-up">
+        <img src="./image/flood home.jpg" alt="">
+
+        <div class="card-content" >
+          <h3>Floods</h3>
+          <p>Heavy flooding destroys homes, roads, and communities.</p>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <img src="./image/earthquake home.jpg" alt="">
+
+        <div class="card-content">
+          <h3>Earthquakes</h3>
+          <p>Earthquakes cause massive destruction and loss of life.</p>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="400">
+        <img src="./image/wilefire.jpg" alt="">
+
+        <div class="card-content">
+          <h3>Wildfires</h3>
+          <p>Wildfires spread rapidly and threaten forests and people.</p>
+        </div>
+      </div>
+
+      <div class="card"data-aos="fade-up">
+        <img src="./image/storm.jpg" alt="">
+
+        <div class="card-content" >
+          <h3>Storms</h3>
+          <p>Strong storms damage buildings and communication systems.</p>
+        </div>
+      </div>
+
+      <div class="card"data-aos="fade-up" data-aos-delay="200">
+        <img src="./image/landslide.jpg" alt="">
+
+        <div class="card-content">
+          <h3>Landslides</h3>
+          <p>Mountain regions face dangerous landslides during rainfall.</p>
+        </div>
+      </div>
+
+      <div class="card"data-aos="fade-up" data-aos-delay="400">
+        <img src="./image/caring natpa.jpg" alt="">
+
+        <div class="card-content" >
+          <h3>Health Emergencies</h3>
+          <p>Diseases and pandemics affect millions of people worldwide.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+
+  <section class="solution-section"data-aos="fade-up" >
+
+    <h2>Solutions & Preparedness</h2>
+
+    <div class="card-container"data-aos="fade-up" >
+
+      <div class="card"data-aos="fade-up" >
+        <img src="./image/emergency kit.jpg" alt="">
+
+        <div class="card-content">
+          <h3>Emergency Kits</h3>
+          <p>Prepared emergency kits help families survive disasters.</p>
+        </div>
+      </div>
+
+      <div class="card"data-aos="fade-up" data-aos-delay="200">
+        <img src="./image/safety tips.jpg" alt="">
+
+        <div class="card-content">
+          <h3>Safety Training</h3>
+          <p>Education and training improve survival skills.</p>
+        </div>
+      </div>
+
+      <div class="card"data-aos="fade-up" data-aos-delay="400">
+        <img src="./image/solution.jpg" alt="">
+
+        <div class="card-content">
+          <h3>Rescue Teams</h3>
+          <p>Rescue operations save lives during emergencies.</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- BENEFITS -->
+
+  <section class="benefits-section"data-aos="fade-up" >
+
+    <h2>Benefits of the Website</h2>
+
+    <div class="benefit-grid" data-aos="fade-up" >
+
+      <div class="benefit-box" data-aos="fade-up" >
+        <i class="fa-solid fa-clock"></i>
+        <h3>Fast Alerts</h3>
+        <p>Receive quick emergency information instantly.</p>
+      </div>
+
+      <div class="benefit-box" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-people-group"></i>
+        <h3>Community Safety</h3>
+        <p>Helps communities respond quickly during disasters.</p>
+      </div>
+
+      <div class="benefit-box" data-aos="fade-up" data-aos-delay="400">
+        <i class="fa-solid fa-phone-volume"></i>
+        <h3>Emergency Contact</h3>
+        <p>Easy access to emergency support and rescue teams.</p>
+      </div>
+
+      <div class="benefit-box" data-aos="fade-up">
+        <i class="fa-solid fa-book"></i>
+        <h3>Awareness</h3>
+        <p>Educates users about disaster preparedness.</p>
+      </div>
+
+      <div class="benefit-box" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <h3>Location Safety</h3>
+        <p>Provides information about affected regions.</p>
+      </div>
+
+      <div class="benefit-box" data-aos="fade-up" data-aos-delay="400">
+        <i class="fa-solid fa-heart"></i>
+        <h3>Life Protection</h3>
+        <p>Supports saving lives during emergencies.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- WHY WEBSITE -->
+
+  <section class="why-section" data-aos="fade-up">
+
+    <h2>Why We Made This Website</h2>
+
+    <div class="why-container" data-aos="fade-up">
+
+      <div class="why-card" data-aos="fade-up">
+        <img src="./image/Protectlives.jpg" alt="">
+
+        <h3>Protect Lives</h3>
+        <p>
+          The website was created to spread awareness and improve
+          disaster preparedness worldwide.
+        </p>
+      </div>
+
+      <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="./image/support community.jpg" alt="">
+
+        <h3>Support Communities</h3>
+        <p>
+          Communities need reliable information during emergencies and
+          disasters.
+        </p>
+      </div>
+
+      <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+        <img src="./image/awareness.jpg" alt="">
+
+        <h3>Increase Awareness</h3>
+        <p>
+          Knowledge about safety measures can reduce injuries and deaths.
+        </p>
+      </div>
+  </section>
+
+
+
+  
+
+      <!-- Footer -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+    <!-- Logo / About -->
+    <div class="footer-section">
+        <h3>Disaster Management Portal</h3>
+        <p>
+            Providing emergency information,
+            alerts, disaster updates and
+            emergency contact services.
+        </p>
+    </div>
+
+    <!-- Quick Links -->
+    
+    <div class="footer-section " >
+       <div class="quick">
+        <h3  >Quick Links</h3>
+
+        <a href=index.html>Home</a>
+        <a href="mission.html">Mission</a>
+        <a href="vission.html">Vision</a>
+        <a href="emergency.html">Emergency Contact</a>
+        <a href="disaster.html">Disaster Information</a>
+</div>
+    </div>
+
+    <!-- Emergency Contact -->
+    <div class="footer-section">
+
+        <h3>Emergency Numbers</h3>
+
+        <p>🚑 Ambulance : 112</p>
+        <p>🚒 Fire Fighter : 110</p>
+        <p>👮 Police (RBP) : 113</p>
+        <p>🛡️ Desuung : 1414</p>
+
+    </div>
+
+    <!-- Social Media -->
+
+    <div class="footer-section">
+
+        <h3 id="follow">Follow Us</h3>
+
+        <div class="social-icons">
+
+            <a href="https://www.facebook.com/">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/accounts/login/?hl=en">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://x.com/">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+            <a href="https://www.youtube.com/">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+        </div>
+        <h3 id="contact">Contact Us</h3>
+        <p id="contact">17232323</p>
+        <p id="contact"><a href="https://mail.google.com/?utm_source=chatgpt.com">disaster@gmail.com</a></p>
+
+    </div>
+
+</div>
+
+<hr>
+
+<div class="footer-bottom">
+    © 2026 Disaster Alert and Safety Portal | 
+    All Rights Reserved
+</div>
+
+</footer>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

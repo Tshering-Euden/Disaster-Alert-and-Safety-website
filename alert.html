@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Disaster Alert and Safety</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="alert.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <img src="./image/logo.jpg" alt="Logo">
+
+        Disaster Alert and Safety
+
+    </div>
+
+    <ul class="nav-links" id="navMenu">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+
+            <a href="about.html">About</a>
+
+            <ul class="dropdown-content">
+
+                <li><a href="mission.html">Mission</a></li>
+
+                <li><a href="vission.html">Vision</a></li>
+
+                <li><a href="staffprofile.html">Staff Profile</a></li>
+
+            </ul>
+
+        </li>
+
+        <li class="dropdown">
+
+            <a href="alert.html">Alert</a>
+
+            <!-- <ul class="dropdown-content">
+
+                <li><a href="offline.html">Offline</a></li>
+
+                <li><a href="online.html">Online</a></li>
+
+            </ul> -->
+
+        </li>
+
+        <li class="dropdown">
+
+            <a href="emergency.html">Emergency Contact</a>
+
+            <ul class="dropdown-content">
+
+                <li><a href="RBA.html">RBA</a></li>
+
+                <li><a href="RBP.html">RBP</a></li>
+
+                <li><a href="firefighter.html">Fire Fighter</a></li>
+
+                <li><a href="ambulance.html">Ambulance</a></li>
+
+                <li><a href="desuung.html">Desuung</a></li>
+
+            </ul>
+
+        </li>
+
+        <li class="dropdown">
+
+            <a href="disaster.html">Disaster</a>
+
+            <ul class="dropdown-content">
+
+                <li><a href="man-made.html">Man-made</a></li>
+
+                <li><a href="natural.html">Natural</a></li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+    <!-- Search Box -->
+    <div class="search-box">
+
+        <input type="text" placeholder="Search...">
+
+        <button>Search</button>
+
+    </div>
+
+    <!-- Menu Icon -->
+    <div class="menu-icon" id="menuBtn">
+
+        <i class="fas fa-bars"></i>
+
+    </div>
+
+</nav>
+
+<!-- ================= ALERT SECTION ================= -->
+
+<!-- Boxicons CDN (Make sure this is in your <head> if you don't already have it) -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+<section class="alert-section">
+    <div class="alert-container">
+        <h1>Disaster Alert Settings</h1>
+        <hr class="section-divider">
+        <p id="content">The Disaster Alert Settings panel provides a centralized, user-friendly interface designed to keep individuals informed and safe during emergencies. It allows users to customize exactly how they receive critical, real-time emergency situations updates.
+
+The portal offers two primary channels for receiving these notifications, ensuring maximum coverage and accessibility: <br> <br>
+
+<strong>Email Alerts:</strong> Users can input their email addresses to receive comprehensive, written updates regarding ongoing disasters, safety protocols, and evacuation notices directly in their inbox. <br><br>
+
+<strong>SMS Alerts:</strong> For more immediate, on-the-go notifications, users can link their phone numbers. This ensures that time-sensitive emergency alerts reach their mobile devices instantly, even without an active internet connection. <br><br>
+
+Once the contact information is filled out, users can click the Activate Alert button to save their preferences and seamlessly enroll in the emergency broadcasting network.</p> <br><br><br>
+        <p class="top-text">
+            Choose how you want to receive disaster alerts when emergency situations happen.
+        </p>
+
+        <div class="alert-content">
+            <!-- Email Alert -->
+            <div class="alert-box">
+                <i class='bx bx-envelope alert-icon'></i>
+                <h2>Email Alert</h2>
+                <p>Receive disaster alerts via Email</p>
+                <div class="input-box">
+                    <i class='bx bx-envelope input-icon'></i>
+                    <input type="email" id="email" placeholder="Enter email address">
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- SMS Alert -->
+            <div class="alert-box">
+                <i class='bx bx-mobile alert-icon'></i>
+                <h2>SMS Alert</h2>
+                <p>Receive disaster alerts via Phone Number</p>
+                <div class="input-box">
+                    <i class='bx bx-phone input-icon'></i>
+                    <input type="text" id="phone" placeholder="Enter phone number">
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <button id="alertBtn">
+            <i class='bx bx-bell'></i>
+            Activate Alert
+        </button>
+        <p class="bottom-text">
+            Click the button to save and activate disaster alert settings.
+        </p>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+    <!-- Logo / About -->
+    <div class="footer-section">
+        <h3>Disaster Management Portal</h3>
+        <p>
+            Providing emergency information,
+            alerts, disaster updates and
+            emergency contact services.
+        </p>
+    </div>
+
+     <!-- Quick Links -->
+    
+    <div class="footer-section " >
+       <div class="quick">
+        <h3  >Quick Links</h3>
+
+        <a href=index.html>Home</a>
+        <a href="mission.html">Mission</a>
+        <a href="vission.html">Vision</a>
+        <a href="emergency.html">Emergency Contact</a>
+        <a href="disaster.html">Disaster Information</a>
+</div>
+    </div>
+
+
+    <!-- Emergency Contact -->
+    <div class="footer-section">
+
+        <h3>Emergency Numbers</h3>
+
+        <p>🚑 Ambulance : 112</p>
+        <p>🚒 Fire Fighter : 110</p>
+        <p>👮 Police (RBP) : 113</p>
+        <p>🛡️ Desuung : 1414</p>
+
+    </div>
+
+    <!-- Social Media -->
+
+    <div class="footer-section">
+
+        <h3 id="follow">Follow Us</h3>
+
+        <div class="social-icons">
+
+            <a href="https://www.facebook.com/">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/accounts/login/?hl=en">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://x.com/">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+            <a href="https://www.youtube.com/">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+        </div>
+        <h3 id="contact">Contact Us</h3>
+        <p id="contact">17232323</p>
+        <p id="contact"><a href="https://mail.google.com/?utm_source=chatgpt.com">disaster@gmail.com</a></p>
+    </div>
+
+</div>
+
+<hr>
+
+<div class="footer-bottom">
+    © 2026 Disaster Alert and Safety Portal |
+    All Rights Reserved
+</div>
+
+</footer>
+<script src="alert.js"></script>
+
+<audio src="./image/jeremayjimenez-iran-eas-alarm-2025-my-own-alarm-483826.mp3" id="audio"></audio>
+
+</body>
+</html>
+
+
