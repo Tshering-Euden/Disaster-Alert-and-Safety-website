@@ -179,6 +179,9 @@ position:static;
 box-shadow:none;
 border-radius:0;
 }
+ .dropdown.open .dropdown-content{
+    display:block;
+}
 
 
 }

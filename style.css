@@ -139,6 +139,7 @@ font-size:24px;
 cursor:pointer;
 }
 
+
 /* Responsive */
 
 @media(max-width:900px){
@@ -181,7 +182,19 @@ position:static;
 box-shadow:none;
 border-radius:0;
 }
+/* .dropdown-content{
+    display:none;
+}
 
+.dropdown.open .dropdown-content{
+    display:block;
+    position:static;
+    box-shadow:none;
+    border-radius:0;
+} */
+ .dropdown.open .dropdown-content{
+    display:block;
+}
 
 }
 
