@@ -465,6 +465,11 @@ padding-bottom:10px;
 
 }
 
+#gmail{
+  margin-left: 55px;
+}
+
+
 /* Mobile */
 
 @media(max-width:768px){
@@ -492,5 +497,8 @@ justify-content:center;
 .footer-section .quick{
     margin-left: 0;
 }
+#gmail{
+  margin-left: -2px;
+} 
 
 }
